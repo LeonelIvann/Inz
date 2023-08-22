@@ -1,4 +1,6 @@
-# STATUS [![Netlify Status](https://api.netlify.com/api/v1/badges/fe75c64f-aac7-4c51-bd7b-81a3ea5b42b1/deploy-status)](https://app.netlify.com/sites/inspirationzone/deploys)
+# Actual Status [![Netlify Status](https://api.netlify.com/api/v1/badges/fe75c64f-aac7-4c51-bd7b-81a3ea5b42b1/deploy-status)](https://app.netlify.com/sites/inspirationzone/deploys)
+
+Url : [InspirationZone](https://inspirationzone.netlify.app/).
 
 # Getting Started with Create React App
 
