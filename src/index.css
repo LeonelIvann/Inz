@@ -5,9 +5,206 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+::-webkit-scrollbar {
+  display: none;
+}
+
+.h1__inspiration {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 0px 0px rgba(255, 255, 255, 0.192);
+  letter-spacing: 2px;
+  background-image: url("../public/img/background.jpg");
+  background-clip: text;
+  --webkit-background-clip: text;
+  color: transparent;
+}
+
+.Main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #1b1b1b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 35px;
+  overflow-y: scroll;
+}
+
+.div__header {
+  text-align: center;
+  padding: 20px 10px;
+  margin: 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div__header p {
+  color: #eeecece8;
+  border-bottom: 2px solid transparent;
+}
+
+.div__header p button {
+  padding: 8px 15px;
+  border-bottom: 2px solid transparent;
+  color: rgba(255, 255, 255, 0.377);
+  transition: .8s;
+  border-radius: 21px;
+}
+
+.div__header p:hover button {
+  color: rgba(255, 255, 255, 0.753);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.192);
+  padding: 8px 85px;
+  border-radius: 21px;
+  transition: 1.5s;
+  box-shadow: inset 10px 10px 0px rgb(255 255 255 / 8%);
+}
+
+.article__containerPosts {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 6em;
+}
+
+.div___publicacion {
+  width: 170px;
+  height: fit-content;
+  max-height: 350px;
+  overflow: hidden;
+  padding: 5px;
+  margin: 8px;
+  background-color: white;
+  border-radius: 21px;
+  transition: transform 1s;
+}
+
+.div___publicacion:hover {
+  transform: scale(1.1);
+  transition: transform 1s;
+  z-index: 1;
+}
+
+.div___publicacion:focus{
+  transform: scale(2);
+  z-index: 3;
+}
+
+.div___publicacion:focus,
+.div___publicacionImage {
+  background-size: contain !important;
+}
+
+
+.div__publicacionImage {
+  border-radius: 18px;
+  width: 100%;
+  height: 170px;
+  background-position: center;
+  background-size: contain;
+}
+
+.div__options {
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.div__options button:focus{
+  padding-bottom: 2px;
+  border-bottom: 2px solid white;
+  transition: transform 3s;
+}
+.div__options button{
+  color: #fff;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: transform 3s;
+}
+.div__options button:hover{
+  padding-bottom: 2px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.205);
+  transition: transform 3s;
+}
+
+.footer{
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  bottom: 0px;
+  z-index: 30;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #1b1b1b;
+  filter: invert(1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__content h3{
+  font-weight: 500;
+  font-size: 21px;
+  filter: invert(0.5);
+}
+.colaboradores {
+  color: #1b1b1b;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  padding: 15px;
+  width: 100%;
+  max-width: 950px;
+}
+.colaboradores li{
+  margin: 5px;
+  font-weight: 100;
+}
+.colaboradores li a {
+  font-weight: 600;
+  filter: invert(0.7);
+}
+
+.a__backToTop{
+  z-index: 9999;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 30px;
+  border-radius: 8px;
+  right: 8em;
+  bottom: 2em;
+}
+
+@media screen and (min-width: 290px) {
+  .article__containerPosts {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .article__containerPosts {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
 }
