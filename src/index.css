@@ -125,6 +125,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  height: fit-content;
+    flex-flow: wrap;
 }
 .div__options button:focus{
   padding-bottom: 2px;
@@ -191,7 +193,6 @@ body {
   width: 55px;
   height: 30px;
   border-radius: 8px;
-  right: 8em;
   bottom: 2em;
 }
 
@@ -200,11 +201,17 @@ body {
     padding-left: 5em;
     padding-right: 5em;
   }
+  .a__backToTop{
+    right: 1em;
+  }
 }
 
 @media screen and (min-width: 720px) {
   .article__containerPosts {
     padding-left: 10em;
     padding-right: 10em;
+  }
+  .a__backToTop{
+    right: 8em;
   }
 }

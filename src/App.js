@@ -30,7 +30,7 @@ function App() {
           <button onClick={() => setFiltro('memes')}>Memes</button>
           <button onClick={() => setFiltro('poses')}>Poses</button>
           <button onClick={() => setFiltro('bocetos')}>Bocetos</button>
-          <button onClick={() => setFiltro('eyecat-makeup')}>Eyecat Makeup</button>
+          <button onClick={() => setFiltro('eyecat-makeup')}>Eye Makeup</button>
           <button onClick={() => setFiltro('steampunk-woman')}>Steampunk Woman</button>
         </div>
       </div>
